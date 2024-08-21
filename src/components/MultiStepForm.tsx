@@ -65,6 +65,7 @@ const MultiStepForm: React.FC = () => {
   const handleSubmit = (values: FormValues, { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }) => {
     if (step === 3) {
       alert("You have been regiestered!");
+      console.log(values);
       setSubmitting(false);
     } else {
       handleNext();
